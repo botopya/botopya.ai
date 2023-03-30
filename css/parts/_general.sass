@@ -1,0 +1,173 @@
+@import settings
+
+h4, h5, h6
+  margin: 0
+
+p, h1, h2, h3
+  margin: 0
+
+section
+  position: relative
+
+button
+  background: none
+  cursor: pointer
+  outline: 0
+
+hr, ol, ul
+  margin: 0
+
+hr
+  border-top: 1px solid rgba(0,0,0,0.1)
+
+// img
+//   width: 100%
+//   height: auto
+
+.uppercase
+  text-transform: uppercase
+
+.clearfix
+  clear: both
+
+.mb-0
+  margin-bottom: 0!important
+
+.mb-auto
+  margin-bottom: auto!important
+
+.mt-0
+  margin-top: 0!important
+
+.mt-auto
+  margin-top: auto!important
+
+.container
+  width: 100%
+  padding-right: 1.2rem
+  padding-left: 1.2rem
+  margin-right: auto
+  margin-left: auto
+
+  @media screen and ( min-width: $small-screen)
+    max-width: 90%
+  @media screen and ( min-width: $medium-screen)
+    max-width: 90%
+  @media screen and ( min-width: $large-screen)
+    max-width: 90%
+  @media screen and ( min-width: $xlarge-screen)
+    max-width: 1000px
+  @media screen and ( min-width: $xxlarge-screen)
+    max-width: 1200px
+  @media screen and ( min-width: $xxxlarge-screen)
+    max-width: 1400px
+
+.btn
+  display: inline-flex
+  align-items: center
+  font: 500 $font-size-medium $primary-font
+  padding: 1.2rem 2.5rem
+  border-radius: 5rem
+  border: none
+  color: white
+  text-decoration: none
+  position: relative
+  &[disabled]
+    pointer-events: none
+    opacity: 0.4
+  @media screen and (min-width: $xxxlarge-screen)
+    font: 500 $font-size-large $primary-font
+    padding: 2rem 5rem
+
+  &--block
+    width: 100%
+    text-align: center
+  &--primary
+    background: linear-gradient(100deg, $navy-blue 0%, $blue 75%)
+    &:hover, &.active
+      background: linear-gradient(50deg, $navy-blue 0%, $blue 75%)
+
+.btn--right:after
+  content: "\f061"
+  font-family: "Font Awesome 5 Free"
+  padding-left: 5px
+.btn--right-small:after
+  content: "\f061"
+  font-family: "Font Awesome 5 Free"
+  padding-left: 8px
+  font-size: 13px
+  vertical-align: 1px
+
+.section
+  &__right
+    width: 100%
+    display: flex
+    justify-content: center
+  &__left
+    width: 100%
+
+  &__container
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+
+    &--column
+      flex-direction: column
+
+  &__buttons
+    display: flex
+    gap: 1.5rem
+    margin-top: 1.8rem
+    flex-direction: column
+
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    flex-direction: column
+    gap: 4rem
+
+  &__row
+    display: flex
+    flex-direction: column
+    gap: 10%
+    width: 100%
+    height: auto
+    padding: 2rem 3rem 2rem 3rem
+    text-align: center
+    background: linear-gradient(90deg, rgba(26, 26, 26, 0) 8.08%, #1A1A1A 48.51%, rgba(26, 26, 26, 0) 98.68%)
+
+  @media screen and ( min-width: $medium-screen)
+    &__container:not(.section__container--column)
+      flex-direction: row
+    &__top
+      flex-direction: row
+      gap: 0
+    &__row
+      flex-direction: row
+      padding: 3rem 4rem 2rem 10rem
+      text-align: initial
+      margin-bottom: 3rem
+    &__right
+      justify-content: flex-end
+    &__buttons
+      flex-direction: row
+  @media screen and ( min-width: $xlarge-screen)
+    &__container
+      gap: 0
+
+.hidden
+  &-sm
+    display: none!important
+    @media screen and (min-width: $large-screen)
+      display: flex !important
+.visible
+  &-sm
+    display: inline-block !important
+    @media screen and (min-width: $large-screen)
+      display: none !important

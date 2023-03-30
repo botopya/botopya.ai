@@ -1,0 +1,32 @@
+@import 'mixins';
+
+// Fonts
+$primary-font: 'Satoshi', Helvetica, Arial, sans-serif;
+
+// Colors
+$lite-blue: #80DBFF;
+$blue: #00A1E1;
+$navy-blue: #2152FF;
+$lime-green: #40EA4F;
+$purple: #959AFF;
+$grey: #77788C;
+
+// Font Sizes
+$font-size-xlarge: 2.5rem;
+$font-size-large: 2.2rem;
+$font-size-medium: 1.8rem;
+$font-size-small: 1.6rem;
+
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+// Screen sizes
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$xlarge-screen: 1200px;
+$xxlarge-screen: 1400px;
+$xxxlarge-screen: 1600px;

@@ -1,0 +1,211 @@
+
+.navbar {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__brand {
+    img {
+      height: 26px;
+      width: 94px;
+    }
+  }
+
+  @media screen and (min-width: $xxxlarge-screen){
+    &__brand {
+      img {
+        height: 37px;
+        width: 134px;
+      }
+    }
+  }
+}
+
+#landing {
+  background-image: url('../img/background-figure.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, white 40%, transparent 80%);
+  }
+
+  @media screen and (min-width: $xxxlarge-screen){
+    background-size: 80%;
+  }
+}
+.landing {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 0;
+  h1 {
+    font-size: 27px;
+    font-weight: 900;
+    text-align: center;
+    padding: 4rem 2rem 0;
+    max-width: 36rem;
+    line-height: 1;
+    span {
+      background: linear-gradient(73.64deg, #2152FF 40%, #21C0FF 50%, #40EA4F 60%, #40EA4F 65%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      line-height: 1.2;
+    }
+  }
+  p {
+    margin-top: 2rem;
+    font-size: $font-size-small;
+    text-align: center;
+    font-weight: 500;
+    max-width: 102rem;
+  }
+  &__input {
+    width: 100%;
+    position: relative;
+    display: flex;
+    max-width: 74rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    input {
+      width: 100%;
+      padding: 2rem 2.5rem 2rem 5.5rem;
+      border: 1px solid $grey;
+      border-radius: 10rem;
+      font-size: $font-size-small;
+    }
+    &::before {
+      content: url('../img/envelope.svg');
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      margin-top: -13px;
+      left: 2.5rem;
+    }
+    .btn {
+      position: absolute;
+      right: 6px;
+      top: 6px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    a {
+      padding: 1.2rem 2rem;
+      font-size: $font-size-medium;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 5rem;
+      text-decoration: none;
+      i {
+        font-size: $font-size-medium;
+      }
+    }
+    .discord {
+      background: #794CFF;
+    }
+    .twitter {
+      background: #1DA1F2;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    a {
+      padding: 1rem;
+    }
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    h1 {
+      font-size: 47px;
+      padding: 10rem 6rem 0;
+      max-width: 69rem;
+    }
+    p {
+      font-size: $font-size-medium;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    h1 {
+      font-size: 56px;
+      padding: 12rem 10rem 0;
+      max-width: 90rem;
+    }
+    p {
+      font-size: $font-size-medium;
+    }
+  }
+
+  @media screen and (min-width: $xlarge-screen) {
+    h1 {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $xxxlarge-screen){
+    h1 {
+      font-size: 94px;
+      font-weight: 900;
+      padding: 20rem 10rem 0;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 3rem;
+      max-width: 102rem;
+    }
+    &__input {
+      max-width: 74rem;
+      margin-top: 3rem;
+      input {
+        padding: 3rem 3.5rem 3rem 7rem;
+        border-radius: 10rem;
+        font-size: 21px;
+      }
+      &::before {
+        width: 27px;
+        height: 27px;
+        margin-top: -13px;
+        left: 3.5rem;
+      }
+      .btn {
+        right: 9px;
+        top: 9px;
+      }
+    }
+    &__buttons {
+      gap: 3rem;
+      margin-top: 3rem;
+      a {
+        padding: 23px 33px;
+        font-size: 24px;
+        gap: 23px;
+        i {
+          font-size: 37px;
+        }
+      }
+    }
+    &__social {
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+  }
+}
