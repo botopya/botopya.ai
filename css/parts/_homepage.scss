@@ -81,6 +81,7 @@
       border: 1px solid $grey;
       border-radius: 10rem;
       font-size: $font-size-small;
+      background: white;
     }
     &::before {
       content: url('../img/envelope.svg');
@@ -156,9 +157,9 @@
   }
 
   @media screen and (min-width: $xlarge-screen) {
-    h1 {
-      max-width: 100%;
-    }
+    // h1 {
+    //   max-width: 100%;
+    // }
   }
 
   @media screen and (min-width: $xxxlarge-screen){

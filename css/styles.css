@@ -234,6 +234,7 @@ body {
   font-family: "Satoshi", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
+  background: white;
 }
 
 main {
@@ -322,6 +323,7 @@ main {
   border: 1px solid #77788C;
   border-radius: 10rem;
   font-size: 1.6rem;
+  background: white;
 }
 .landing__input::before {
   content: url("../img/envelope.svg");
@@ -390,11 +392,6 @@ main {
   }
   .landing p {
     font-size: 1.8rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .landing h1 {
-    max-width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
